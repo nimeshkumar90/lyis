@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LYIS - Leading Your International School. Join international school leaders for professional development, networking, and leadership conferences.">
+  <title>LYIS - Leading Your International School</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="logo-link">
+        <img src="images/lyis-logo.png" alt="LYIS - Leading Your International School" class="logo-img">
+        <span class="logo-divider">|</span>
+        <span class="logo-text">Leading Your International School</span>
+      </a>
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm">LYIS PD</button>
+        <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full Page Menu Overlay -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-overlay-bg"></div>
+    <div class="menu-content">
+      <div class="container nav-container">
+        <a href="/" class="logo-link">
+          <img src="images/lyis-logo.png" alt="LYIS" class="logo-img">
+          <span class="logo-divider">|</span>
+          <span class="logo-text">Leading Your International School</span>
+        </a>
+        <button class="menu-close" aria-label="Close menu" id="menuClose">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="menu-nav">
+        <a href="#about" class="menu-link">About</a>
+        <a href="#events" class="menu-link">Events</a>
+        <a href="#courses" class="menu-link">Courses</a>
+        <a href="#membership" class="menu-link">Membership</a>
+        <a href="#contact" class="menu-link">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg" style="background-image: url('images/hero-background.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-overlay-accent"></div>
+    <div class="container hero-content">
+      <div class="hero-inner">
+        <div class="conference-badge">
+          <span class="badge-dot"></span>
+          <span>Annual Leadership Conference</span>
+        </div>
+        <h1 class="hero-title">
+          #LYIS26 Leadership<br>
+          <span class="gradient-text">Conference 2026</span>
+        </h1>
+        <p class="hero-description">
+          Join international school leaders from around the world for three days of 
+          inspiring keynotes, workshops, and networking opportunities.
+        </p>
+        <div class="hero-details">
+          <div class="detail-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>March 6-8, 2026</span>
+          </div>
+          <div class="detail-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Vietnam</span>
+          </div>
+          <div class="detail-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <span>250+ Attendees</span>
+          </div>
+        </div>
+        <form class="hero-form">
+          <input type="text" placeholder="Your Name" class="form-input">
+          <input type="email" placeholder="Email Address" class="form-input">
+          <button type="submit" class="btn btn-primary btn-glow">Register Now</button>
+          <a href="#about" class="learn-more-link">Learn More</a>
+        </form>
+      </div>
+    </div>
+    <div class="hero-fade"></div>
+  </section>
+
+  <!-- Mission Section -->
+  <section id="about" class="mission-section">
+    <div class="mission-gradient"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Our Mission</span>
+        <h2 class="section-title">
+          Empowering Leaders in <span class="primary-text">International Education</span>
+        </h2>
+        <p class="section-description">
+          LYIS is dedicated to supporting school leaders through professional development, networking, and collaborative learning opportunities.
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon background-primary">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Community Building</h3>
+          <p class="feature-description">Connect with a global network of international school leaders who share your passion for educational excellence and innovation.</p>
+          <div class="feature-glow"></div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon background-primary">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="9" y1="18" x2="15" y2="18"></line>
+              <line x1="10" y1="22" x2="14" y2="22"></line>
+              <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Professional Growth</h3>
+          <p class="feature-description">Access world-class professional development programs designed specifically for leaders in international education.</p>
+          <div class="feature-glow"></div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon background-primary">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Global Impact</h3>
+          <p class="feature-description">Shape the future of international education through collaborative initiatives and research-driven best practices.</p>
+          <div class="feature-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Gatherings Section -->
+  <section id="events" class="gatherings-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Connect & Collaborate</span>
+        <h2 class="section-title">Professional Gatherings</h2>
+        <p class="section-description">Join our community at exclusive events designed to inspire, educate, and connect international school leaders.</p>
+      </div>
+      <div class="bento-grid">
+        <!-- Featured Card -->
+        <div class="bento-card bento-featured">
+          <div class="bento-image" style="background-image: url('images/gathering-venue.jpg');"></div>
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <div class="bento-meta">
+              <span class="featured-badge">Featured Event</span>
+              <span class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                March 2026
+              </span>
+              <span class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Vietnam
+              </span>
+            </div>
+            <h3 class="bento-title">#LYIS26 Annual Conference</h3>
+            <p class="bento-description">Our flagship event bringing together international school leaders from across the globe for three days of learning, networking, and inspiration.</p>
+            <button class="btn-text">
+              Learn More
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+        <!-- Smaller Cards -->
+        <div class="bento-card bento-small">
+          <div class="bento-image" style="background-image: url('images/gathering-discussion.jpg');"></div>
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <div class="bento-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                June 2025
+              </span>
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                vietnam
+              </span>
+            </div>
+            <h3 class="bento-title-sm">Leadership Summit</h3>
+            <p class="bento-description-sm">An exclusive gathering focused on strategic leadership development for heads of schools and senior administrators.</p>
+            <button class="btn-text btn-text-sm">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+        <div class="bento-card bento-small">
+          <div class="bento-image" style="background-image: url('images/gathering-venue.jpg');"></div>
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <div class="bento-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                Quarterly
+              </span>
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Various Cities
+              </span>
+            </div>
+            <h3 class="bento-title-sm">Educator Meetups</h3>
+            <p class="bento-description-sm">Regional networking events connecting educators to share best practices and build lasting professional relationships.</p>
+            <button class="btn-text btn-text-sm">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events Section -->
+  <section class="upcoming-events-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Mark Your Calendar</span>
+        <h2 class="section-title">Upcoming Events</h2>
+        <p class="section-description">Join us for transformative learning experiences designed for international school leaders.</p>
+      </div>
+      <div class="events-scroll">
+        <!-- Dated Event Card -->
+        <div class="event-card event-card-featured">
+          <span class="event-date">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            6-8 Mar 2026
+          </span>
+          <h3 class="event-title">#LYIS26 Leadership Conference 2026</h3>
+          <p class="event-location">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            International School @ ParkCity Hanoi
+          </p>
+          <p class="event-description">Our flagship annual conference bringing together international school leaders from across the globe.</p>
+          <button class="btn-outline-light">
+            Learn More
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+        <!-- Coming Soon Cards -->
+        <div class="event-card event-card-small">
+          <span class="event-coming-soon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Coming Soon
+          </span>
+          <h3 class="event-title-sm">LYIS Library</h3>
+          <p class="event-location-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Singapore
+          </p>
+          <p class="event-description-sm">Monthly virtual sessions focused on specific leadership challenges and best practices.</p>
+          <button class="btn-outline-small">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+        <div class="event-card event-card-small">
+          <span class="event-coming-soon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Coming Soon
+          </span>
+          <h3 class="event-title-sm">LYIS Library Kuala Lumpur</h3>
+          <p class="event-location-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Kuala Lumpur, Malaysia
+          </p>
+          <p class="event-description-sm">A gathering of Asia Pacific school leaders to discuss regional educational trends.</p>
+          <button class="btn-outline-small">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+        <!--
+        <div class="event-card event-card-small">
+          <span class="event-coming-soon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Coming Soon
+          </span>
+          <h3 class="event-title-sm">Innovation in Education Forum</h3>
+          <p class="event-location-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Dubai, UAE
+          </p>
+          <p class="event-description-sm">Exploring cutting-edge teaching methodologies and educational technologies.</p>
+          <button class="btn-outline-small">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+        <div class="event-card event-card-small">
+          <span class="event-coming-soon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Coming Soon
+          </span>
+          <h3 class="event-title-sm">Sustainability in Schools</h3>
+          <p class="event-location-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Amsterdam, Netherlands
+          </p>
+          <p class="event-description-sm">Building environmentally conscious educational institutions for the future.</p>
+          <button class="btn-outline-small">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="courses-section">
+    <div class="container">
+      <div class="section-header section-header-light">
+        <span class="section-label-light">LYIS</span>
+        <h2 class="section-title-light">Our Courses</h2>
+        <p class="section-description-light">Transformative professional development for international school leaders and educators</p>
+      </div>
+      <div class="courses-grid">
+        <div class="course-card">
+          <div class="course-image">
+            <img src="images/course-leadership.png" alt="LYIS-Q Leadership Course">
+            <span class="course-category">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              Leadership
+            </span>
+            <span class="course-duration">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              12-month learning program
+            </span>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">LYIS-Q</h3>
+            <p class="course-description">LYIS-Q is a contextual, values-driven, practical and sustainable qualification designed for international school principals and aspiring school leaders, aiming to build a more sustainable future for all.</p>
+            <button class="btn-outline-small">
+              Know more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-image">
+            <img src="images/course-library.png" alt="Library Leadership Course">
+            <span class="course-category">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              Library
+            </span>
+            <span class="course-duration">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              Two-day in person PD
+            </span>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">Leading Your International School Library</h3>
+            <p class="course-description">Delivered by the exceptional Sarah Pavey - Library Consultant & Trainer, SP4IL. This course focuses on developing strategic competencies aligned with the PKSB standards advocated by CILIP professional membership criteria</p>
+            <button class="btn-outline-small">
+              Know more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="testimonials-badge">Testimonials</span>
+        <h2 class="section-title">Voices from the Leadership Community</h2>
+      </div>
+      <div class="testimonials-carousel" id="testimonialsCarousel">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-item">
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" style="transform: rotate(180deg);">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <div class="stars">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-content">I joined Leading Your International School to connect with other school leaders who care about making a real difference. LYIS is a place to share ideas, learn from others, and work together to build better international schools. It's a supportive learning community focused on strong leadership and helping every educator succeed.</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Dr Jake Madden" class="author-avatar">
+              <h4 class="author-name">Dr Jake Madden</h4>
+              <p class="author-role">Group Head of Schools, AOBA International Education Systems</p>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" style="transform: rotate(180deg);">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <div class="stars">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-content">I joined Leading Your International School to connect with other school leaders who care about making a real difference. LYIS is a place to share ideas, learn from others, and work together to build better international schools. It's a supportive learning community focused on strong leadership and helping every educator succeed.</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face" alt="Dr Melissa Burnell" class="author-avatar">
+              <h4 class="author-name">Dr Melissa Burnell</h4>
+              <p class="author-role">Assistant Principal of Academics, Beijing International Bilingual Academy</p>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" style="transform: rotate(180deg);">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <div class="stars">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-content">The LYIS community has been transformative for my leadership journey. The resources, connections, and support have helped me become a more effective leader and create positive change in my school.</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Sarah Thompson" class="author-avatar">
+              <h4 class="author-name">Sarah Thompson</h4>
+              <p class="author-role">Principal, Singapore American School</p>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" style="transform: rotate(180deg);">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <div class="stars">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-content">Being part of LYIS has connected me with like-minded educators from around the world. The professional development opportunities and collaborative spirit make this community truly special.</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Michael Chen" class="author-avatar">
+              <h4 class="author-name">Michael Chen</h4>
+              <p class="author-role">Head of School, Hong Kong International Academy</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="prevBtn" aria-label="Previous testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button class="carousel-btn" id="nextBtn" aria-label="Next testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Section -->
+  <section id="membership" class="membership-section" style="background-image: url('images/members-bg.jpg');">
+    <div class="membership-overlay"></div>
+    <div class="container membership-content">
+      <h2 class="membership-title">LYIS Membership</h2>
+      <h3 class="membership-subtitle">LYIS MEMBER COMMUNITY</h3>
+      <p class="membership-description">Join the organisation committed to levelling up international school leadership.</p>
+      <button class="btn btn-light">
+        Join Now
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="partners-section">
+    <div class="container">
+      <span class="partners-badge">Trusted Partners</span>
+      <h2 class="partners-title">Who we work with</h2>
+      <p class="partners-description">Partnering with industry leaders to deliver exceptional results</p>
+    </div>
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <div class="partner-logo"><img src="images/partner-edsidera.png" alt="Edsidera"></div>
+        <div class="partner-logo"><img src="images/partner-speedy.png" alt="Speedy Q Relocation"></div>
+        <div class="partner-logo"><img src="images/partner-sue.png" alt="Sue Atkins"></div>
+        <div class="partner-logo"><img src="images/partner-ipgce.png" alt="IPGCE"></div>
+        <div class="partner-logo"><img src="images/partner-mindhealth.png" alt="Mind Your Health"></div>
+        <div class="partner-logo"><img src="images/partner-wildchina.png" alt="WildChina"></div>
+        <!-- Duplicated for seamless loop -->
+        <div class="partner-logo"><img src="images/partner-edsidera.png" alt="Edsidera"></div>
+        <div class="partner-logo"><img src="images/partner-speedy.png" alt="Speedy Q Relocation"></div>
+        <div class="partner-logo"><img src="images/partner-sue.png" alt="Sue Atkins"></div>
+        <div class="partner-logo"><img src="images/partner-ipgce.png" alt="IPGCE"></div>
+        <div class="partner-logo"><img src="images/partner-mindhealth.png" alt="Mind Your Health"></div>
+        <div class="partner-logo"><img src="images/partner-wildchina.png" alt="WildChina"></div>
+      </div>
+    </div>
+    <p class="partners-more">And <strong>50+</strong> more companies trust us</p>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <h3 class="footer-logo">LYIS</h3>
+          <p class="footer-about">Our mission is to help international educators reach their full potential through innovative solutions and dedicated support.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Pages Section -->
+        <div class="footer-pages">
+          <h4 class="footer-heading">Pages</h4>
+          <nav class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#events">Events</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <!-- Subscribe Section -->
+        <div class="footer-subscribe">
+          <h4 class="footer-heading">Subscribe</h4>
+          <p class="subscribe-text">Don't miss our future updates!</p>
+          <form class="subscribe-form" id="subscribeForm">
+            <input type="email" placeholder="Enter your email" class="subscribe-input" required>
+            <button type="submit" class="btn btn-light-solid">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p class="copyright">© 2025 LYIS. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

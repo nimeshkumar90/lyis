@@ -1,43 +1,6 @@
 // LYIS Website - Vanilla JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
-  // ===== Mobile Menu Toggle =====
-  const menuToggle = document.getElementById('menuToggle');
-  const menuOverlay = document.getElementById('menuOverlay');
-  const menuClose = document.getElementById('menuClose');
-  const menuLinks = document.querySelectorAll('.menu-link');
-
-  function openMenu() {
-    menuOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeMenu() {
-    menuOverlay.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  if (menuToggle) {
-    menuToggle.addEventListener('click', openMenu);
-  }
-
-  if (menuClose) {
-    menuClose.addEventListener('click', closeMenu);
-  }
-
-  // Close menu when clicking on menu links
-  menuLinks.forEach(link => {
-    link.addEventListener('click', closeMenu);
-  });
-
-  // Close menu when clicking overlay background
-  if (menuOverlay) {
-    menuOverlay.addEventListener('click', function(e) {
-      if (e.target.classList.contains('menu-overlay-bg')) {
-        closeMenu();
-      }
-    });
-  }
 
   // ===== Testimonials Carousel =====
   const track = document.getElementById('testimonialsTrack');
@@ -207,4 +170,46 @@ document.addEventListener('DOMContentLoaded', function() {
       this.style.transform = 'translateY(0)';
     });
   });
+});
+
+
+// ===== Mobile Navigation Menu =====
+const menuToggle = document.getElementById('menuToggle');
+const menuClose = document.getElementById('menuClose');
+const navOverlay = document.getElementById('navOverlay');
+const navLinks = document.querySelectorAll('.nav-link');
+
+menuToggle.addEventListener('click', () => {
+  navOverlay.classList.add('is-open');
+  document.body.classList.add('menu-open');
+});
+
+menuClose.addEventListener('click', closeMenu);
+
+navOverlay.addEventListener('click', (e) => {
+  if (e.target.classList.contains('nav-backdrop')) {
+    closeMenu();
+  }
+});
+
+function closeMenu() {
+  navOverlay.classList.remove('is-open');
+  document.body.classList.remove('menu-open');
+}
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const submenu = link.nextElementSibling;
+    if (submenu && submenu.classList.contains('submenu')) {
+      submenu.classList.toggle('is-open');
+      link.setAttribute(
+        'aria-expanded',
+        submenu.classList.contains('is-open')
+      );
+    }
+  });
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeMenu();
 });

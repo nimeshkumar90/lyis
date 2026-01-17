@@ -11,7 +11,7 @@
   --foreground: #1f2937;
 
   /* Brand */
-  --primary: #0D1164;              /* Academic Blue */
+  --primary: /*#0D1164;*/ #274B6F;              /* Academic Blue */
   --primary-foreground: #ffffff;
   --secondary: #F25912;            /* Educational Orange */
   --secondary-foreground: #ffffff;
@@ -1419,7 +1419,7 @@ button {
 .membership-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(108, 62, 255, 0.8);
+  background: rgba(39, 75, 111, 0.8);
 }
 
 .membership-content {
@@ -1912,3 +1912,206 @@ button {
   color: var(--secondary);
 }
 
+/* ===== ADVANCED OVERLAY MENU ===== */
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.nav-overlay.is-open {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.nav-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 17, 100, 0.85);
+  backdrop-filter: blur(0px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.nav-overlay.is-open .nav-backdrop {
+  opacity: 1;
+}
+
+.nav-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(24px);
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-overlay.is-open .nav-panel {
+  transform: translateX(0);
+}
+
+.nav-header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.nav-menu {
+  flex: 1;
+}
+
+.nav-item {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
+}
+
+.nav-overlay.is-open .nav-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nav-link {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.submenu.is-open {
+  max-height: 200px;
+}
+
+.submenu-link {
+  display: block;
+  padding: 0.75rem 2.5rem;
+  color: rgba(255,255,255,0.75);
+}
+/* ICON SUPPORT */
+.nav-icon {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+.nav-link {
+  align-items: center;
+}
+
+.submenu-link::before {
+  content: '•';
+  color: var(--secondary);
+  margin-right: 0.75rem;
+}
+/* RESET LIST LOOK */
+.nav-menu,
+.nav-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV LINK LAYOUT */
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 1.75rem;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  background: transparent;
+}
+
+/* ICON */
+.nav-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* TEXT */
+.nav-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* ARROW */
+.nav-arrow {
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+}
+
+.nav-link[aria-expanded="true"] .nav-arrow {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+/* SUBMENU */
+.submenu {
+  background: rgba(0, 0, 0, 0.18);
+  padding-left: 0;
+}
+
+.submenu-link {
+  padding: 0.75rem 1.75rem 0.75rem 4.5rem;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.75);
+}
+
+/* NO-SUBMENU LINKS */
+.nav-link.no-submenu .nav-arrow {
+  display: none;
+}
+/* LOGO + TEXT INLINE FIX */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+}
+
+.nav-logo img {
+  height: 42px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.nav-logo-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}

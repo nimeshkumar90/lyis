@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYIS-L | Leading Your International School Library</title>
+    <meta name="description" content="A two-day in-person course designed to equip school librarians with advanced leadership, pedagogical, and strategic skills.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/courses.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+        <a href="/" class="logo-link">
+            <img src="images/lyis-logo.png" alt="LYIS - Leading Your International School" class="logo-img">
+            <span class="logo-divider">|</span>
+            <span class="logo-text">Leading Your International School</span>
+        </a>
+        <div class="nav-actions">
+            <button class="btn btn-primary btn-sm">LYIS PD</button>
+            <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            </button>
+        </div>
+        </div>
+    </header>
+
+    <!-- ================= LYIS OVERLAY MENU ================= -->
+    <nav class="nav-overlay" id="navOverlay" aria-hidden="true">
+        <div class="nav-backdrop"></div>
+
+        <div class="nav-panel">
+        <!-- Header -->
+        <div class="nav-header">
+            <a href="/" class="nav-logo">
+            <img src="images/lyis-logo.png" alt="LYIS" style="height:42px;">
+            <span class="nav-logo-text">Leading Your International School</span>
+            </a>
+
+            <button class="close-btn" id="menuClose" aria-label="Close menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            </button>
+        </div>
+
+        <!-- Menu -->
+        <ul class="nav-menu">
+
+            <!-- About -->
+            <li class="nav-item">
+            <button class="nav-link" aria-expanded="false">
+                <span class="nav-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                </span>
+                <span class="nav-text">About</span>
+                <span class="nav-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+                </span>
+            </button>
+
+            <ul class="submenu">
+                <li><a href="#about" class="submenu-link">Who We Are</a></li>
+                <li><a href="#mission" class="submenu-link">Mission & Vision</a></li>
+            </ul>
+            </li>
+
+            <!-- Events -->
+            <li class="nav-item">
+            <button class="nav-link" aria-expanded="false">
+                <span class="nav-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="4" width="18" height="18" rx="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+                </span>
+                <span class="nav-text">Events</span>
+                <span class="nav-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+                </span>
+            </button>
+
+            <ul class="submenu">
+                <li><a href="#events" class="submenu-link">Upcoming Events</a></li>
+            </ul>
+            </li>
+
+            <!-- Courses -->
+            <li class="nav-item">
+            <a href="#courses" class="nav-link no-submenu">
+                <span class="nav-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/>
+                </svg>
+                </span>
+                <span class="nav-text">Courses</span>
+            </a>
+            </li>
+
+            <!-- Membership -->
+            <li class="nav-item">
+            <a href="#membership" class="nav-link no-submenu">
+                <span class="nav-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                </svg>
+                </span>
+                <span class="nav-text">Membership</span>
+            </a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+            <a href="#contact" class="nav-link no-submenu">
+                <span class="nav-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 4h16v12H4z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                </span>
+                <span class="nav-text">Contact</span>
+            </a>
+            </li>
+
+        </ul>
+
+        <div class="nav-footer">© 2026 LYIS</div>
+        </div>
+    </nav>
+    <!-- ================= LYIS OVERLAY MENU END ================= --> 
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/lyis-library-course.png" alt="LYIS-L Course" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <a href="courses.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Courses
+            </a>
+            <h1>LYIS-L</h1>
+            <p class="hero-subtitle">Leading Your International School Library</p>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <span class="stat-label">Duration</span>
+                    <span class="stat-value">2 Days</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    </div>
+                    <span class="stat-label">Sessions</span>
+                    <span class="stat-value">5</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <span class="stat-label">Format</span>
+                    <span class="stat-value">In-Person</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                    </div>
+                    <span class="stat-label">Certificate</span>
+                    <span class="stat-value">LYIS-L</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Left Column -->
+                <div class="content-left">
+                    <!-- About the Course -->
+                    <div class="content-section">
+                        <h2>About This Course</h2>
+                        <p>The role of the librarian has evolved far beyond bookshelves and borrowing systems. Librarians are now becoming leaders in digital literacy, champions of inclusive education, and pivotal partners in curriculum design. The Leading Your International School Library course is designed to equip school librarians with the advanced leadership, pedagogical, and strategic skills needed to thrive in this expanded role.</p>
+                        <blockquote class="blockquote">
+                            "This two-day, in-person course offers a unique opportunity for school librarians to step into their potential as educational leaders within international contexts. Through a blend of interactive sessions, practical design challenges, and reflective learning, delegates will gain actionable insights and tools to transform their libraries into vibrant learning hubs that support whole-school goals."
+                        </blockquote>
+                    </div>
+
+                    <!-- Key Outcomes -->
+                    <div class="content-section">
+                        <h2>Key Outcomes</h2>
+                        <div class="outcomes-grid">
+                            <div class="outcome-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <span>Demonstrate strategic leadership in international school library settings</span>
+                            </div>
+                            <div class="outcome-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <span>Design inclusive, dynamic learning environments</span>
+                            </div>
+                            <div class="outcome-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <span>Curate and evaluate resources with cultural and curricular sensitivity</span>
+                            </div>
+                            <div class="outcome-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <span>Foster lifelong reading and research skills across age groups</span>
+                            </div>
+                            <div class="outcome-card">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <span>Measure and communicate library impact to drive continuous improvement</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Modules -->
+                    <div class="content-section">
+                        <h2>Course Modules</h2>
+                        <div class="accordion">
+                            <div class="accordion-item active">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span class="module-number">1</span>
+                                    <span class="accordion-title">Strategic Leadership in International Library Settings</span>
+                                    <span class="accordion-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </div>
+                                <div class="accordion-content">
+                                    Articulate and apply leadership philosophies tailored to multicultural, multilingual educational environments.
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span class="module-number">2</span>
+                                    <span class="accordion-title">Designing Inclusive Learning Environments</span>
+                                    <span class="accordion-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </div>
+                                <div class="accordion-content">
+                                    Develop skills to create library spaces that are accessible, inclusive, and responsive to diverse learner needs.
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span class="module-number">3</span>
+                                    <span class="accordion-title">Resource Curation with Cultural Sensitivity</span>
+                                    <span class="accordion-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </div>
+                                <div class="accordion-content">
+                                    Critically evaluate and select resources that support international curricula and reflect cultural diversity.
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span class="module-number">4</span>
+                                    <span class="accordion-title">Fostering Lifelong Reading and Research Skills</span>
+                                    <span class="accordion-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </div>
+                                <div class="accordion-content">
+                                    Promote reading and inquiry through engaging strategies incorporating technology and cultural understanding.
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span class="module-number">5</span>
+                                    <span class="accordion-title">Measuring and Communicating Library Impact</span>
+                                    <span class="accordion-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </div>
+                                <div class="accordion-content">
+                                    Assess library programs effectively and communicate outcomes to stakeholders for continuous improvement.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Leader -->
+                    <div class="content-section">
+                        <h2>Course Leader</h2>
+                        <div class="instructor-card">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop" alt="Dr Sarah Pavey" class="instructor-image">
+                            <div class="instructor-info">
+                                <h3>Dr Sarah Pavey MSc FCLIP FRSA</h3>
+                                <p>Sarah has over 20 years experience as a school librarian in many different types of school. For over 10 years she has run her successful training and consultancy business SP4IL providing courses for schools around the globe. She holds a degree in biochemistry, a masters in Information Science, and professional qualifications with a Fellowship from CILIP. She has written many professional books including The Innovative School Librarian, Playing Games in the Library, and The Networked Librarian.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- Pricing Card -->
+                    <div class="sidebar-card">
+                        <div class="sidebar-card-header">
+                            <h3>Course Investment</h3>
+                        </div>
+                        <div class="sidebar-card-content">
+                            <div class="price-row">
+                                <span class="price-label">Members</span>
+                                <span class="price-value">Contact Us</span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-label">Guests</span>
+                                <span class="price-value">Contact Us</span>
+                            </div>
+                            <div class="sidebar-buttons">
+                                <a href="#" class="btn btn-secondary btn-full">
+                                    Register Interest
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </a>
+                                <a href="#" class="btn btn-outline btn-full">Download Course Guide</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Info Card -->
+                    <div class="quick-info-card">
+                        <h3>Quick Info</h3>
+                        <div class="quick-info-list">
+                            <div class="quick-info-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <span>Duration: 2 Days</span>
+                            </div>
+                            <div class="quick-info-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Format: In-Person</span>
+                            </div>
+                            <div class="quick-info-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                <span>5 Sessions</span>
+                            </div>
+                            <div class="quick-info-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                                <span>Certificate Included</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Membership Card -->
+                    <div class="membership-card">
+                        <h3>Save with Membership</h3>
+                        <p>LYIS members receive exclusive pricing on all courses. Join today and invest in your leadership journey.</p>
+                        <a href="#" class="btn btn-outline-secondary btn-full">Learn About Membership</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Invest Section -->
+    <section class="why-invest">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Invest in This Course?</h2>
+                <p class="section-desc">Transform your professional practice and make a lasting impact on your school community.</p>
+            </div>
+            <div class="why-invest-grid">
+                <div class="invest-card">
+                    <div class="invest-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+                    </div>
+                    <h3>Practical & Relevant</h3>
+                    <p>Gain actionable insights and tools you can immediately apply in your context.</p>
+                </div>
+                <div class="invest-card">
+                    <div class="invest-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>Global Network</h3>
+                    <p>Connect with like-minded leaders from international schools worldwide.</p>
+                </div>
+                <div class="invest-card">
+                    <div class="invest-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                    </div>
+                    <h3>Expert Faculty</h3>
+                    <p>Learn from experienced international school leaders and educational experts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Begin Your Journey?</h2>
+            <p>Take the first step towards becoming an exceptional international school library leader.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-white">
+                    Register Interest
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="courses.html" class="btn btn-outline-white">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>LYIS</h3>
+                    <p>Empowering international school leaders to create sustainable, inclusive, and impactful educational environments worldwide.</p>
+                    <div class="footer-social">
+                        <a href="#">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="#">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#events">Events</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Member Portal</a></li>
+                        <li><a href="#">Course Materials</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-subscribe">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest updates and resources.</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 LYIS. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // ===== Navbar Scroll Effect =====
+        let lastScrollY = window.scrollY;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function() {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 100) {
+            navbar.style.background = 'rgba(10, 10, 15, 0.95)';
+            } else {
+            navbar.style.background = 'rgba(10, 10, 15, 0.8)';
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // ===== Mobile Navigation Menu =====
+        const menuToggle = document.getElementById('menuToggle');
+        const menuClose = document.getElementById('menuClose');
+        const navOverlay = document.getElementById('navOverlay');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        menuToggle.addEventListener('click', () => {
+        navOverlay.classList.add('is-open');
+        document.body.classList.add('menu-open');
+        });
+
+        menuClose.addEventListener('click', closeMenu);
+
+        navOverlay.addEventListener('click', (e) => {
+        if (e.target.classList.contains('nav-backdrop')) {
+            closeMenu();
+        }
+        });
+
+        function closeMenu() {
+        navOverlay.classList.remove('is-open');
+        document.body.classList.remove('menu-open');
+        }
+
+        navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const submenu = link.nextElementSibling;
+            if (submenu && submenu.classList.contains('submenu')) {
+            submenu.classList.toggle('is-open');
+            link.setAttribute(
+                'aria-expanded',
+                submenu.classList.contains('is-open')
+            );
+            }
+        });
+        });
+
+        document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+        });
+
+        // ===== Accordion Functionality =====   
+        function toggleAccordion(header) {
+            const item = header.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Close all accordion items
+            document.querySelectorAll('.accordion-item').forEach(accordionItem => {
+                accordionItem.classList.remove('active');
+            });
+            
+            // Open clicked item if it wasn't already open
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

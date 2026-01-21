@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYIS Membership | Join the International School Leadership Community</title>
+    <meta name="description" content="Join LYIS - the organisation committed to levelling up international school leadership. Access exclusive resources, professional development, and a global community.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/membership.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+        <a href="/" class="logo-link">
+            <img src="images/lyis-logo.png" alt="LYIS - Leading Your International School" class="logo-img">
+            <span class="logo-divider">|</span>
+            <span class="logo-text">Leading Your International School</span>
+        </a>
+        <div class="nav-actions">
+            <button class="btn btn-primary btn-sm">LYIS PD</button>
+            <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            </button>
+        </div>
+        </div>
+    </header>
+    <!-- ================= LYIS OVERLAY MENU ================= -->
+    <nav class="nav-overlay" id="navOverlay" aria-hidden="true">
+        <div class="nav-backdrop"></div>
+
+        <div class="nav-panel">
+        <!-- Header -->
+        <div class="nav-header">
+            <a href="/" class="nav-logo">
+            <img src="images/lyis-logo.png" alt="LYIS" style="height:42px;">
+            <span class="nav-logo-text">Leading Your International School</span>
+            </a>
+
+            <button class="close-btn" id="menuClose" aria-label="Close menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            </button>
+        </div>
+
+        <!-- Menu -->
+        <ul class="nav-menu">
+
+            <!-- About -->
+            <li class="nav-item">
+            <button class="nav-link" aria-expanded="false">
+                <span class="nav-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                </span>
+                <span class="nav-text">About</span>
+                <span class="nav-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+                </span>
+            </button>
+
+            <ul class="submenu">
+                <li><a href="#about" class="submenu-link">Who We Are</a></li>
+                <li><a href="#mission" class="submenu-link">Mission & Vision</a></li>
+            </ul>
+            </li>
+
+            <!-- Events -->
+            <li class="nav-item">
+            <button class="nav-link" aria-expanded="false">
+                <span class="nav-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="4" width="18" height="18" rx="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+                </span>
+                <span class="nav-text">Events</span>
+                <span class="nav-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+                </span>
+            </button>
+
+            <ul class="submenu">
+                <li><a href="#events" class="submenu-link">Upcoming Events</a></li>
+            </ul>
+            </li>
+
+            <!-- Courses -->
+            <li class="nav-item">
+            <a href="#courses" class="nav-link no-submenu">
+                <span class="nav-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/>
+                </svg>
+                </span>
+                <span class="nav-text">Courses</span>
+            </a>
+            </li>
+
+            <!-- Membership -->
+            <li class="nav-item">
+            <a href="#membership" class="nav-link no-submenu">
+                <span class="nav-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                </svg>
+                </span>
+                <span class="nav-text">Membership</span>
+            </a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+            <a href="#contact" class="nav-link no-submenu">
+                <span class="nav-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 4h16v12H4z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                </span>
+                <span class="nav-text">Contact</span>
+            </a>
+            </li>
+
+        </ul>
+
+        <div class="nav-footer">© 2026 LYIS</div>
+        </div>
+    </nav>
+    <!-- ================= LYIS OVERLAY MENU END ================= -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1600&h=800&fit=crop" alt="LYIS Membership" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Member Community
+            </div>
+            <h1>LYIS Membership</h1>
+            <p class="hero-subtitle">Join the Organisation Committed to Levelling Up International School Leadership</p>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <span class="stat-label">Global Network</span>
+                    <span class="stat-value">250+ Members</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </div>
+                    <span class="stat-label">Countries</span>
+                    <span class="stat-value">40+</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    </div>
+                    <span class="stat-label">Resources</span>
+                    <span class="stat-value">100+</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </div>
+                    <span class="stat-label">Events</span>
+                    <span class="stat-value">Annual</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section class="why-join">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why Join LYIS?</span>
+                <h2>Grow Personally and Professionally</h2>
+                <p>Join an organisation committed to continuous learning and development with a supportive community of like-minded leaders.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+                    </div>
+                    <h3>Build Your Personal Brand</h3>
+                    <p>Grow personally and professionally while establishing yourself as a thought leader in international education.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </div>
+                    <h3>Share International Best Practices</h3>
+                    <p>Exchange knowledge and strategies with school leaders from around the world to enhance your leadership approach.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>Join a Supportive Community</h3>
+                    <p>Connect with like-minded leaders committed to continuous learning and development in international education.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Core Values</span>
+                <h2>What We Stand For</h2>
+                <p>LYIS is built on three fundamental pillars that guide everything we do.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        Ethical Leadership
+                    </h3>
+                    <p>Join our commitment to values-based ethical practices in school leadership. Build trust, respect, and integrity within your school community.</p>
+                </div>
+                <div class="value-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                        Opportunities
+                    </h3>
+                    <p>We create opportunities for all members. Join an environment where everyone can thrive, regardless of background.</p>
+                </div>
+                <div class="value-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                        Sustainability
+                    </h3>
+                    <p>Support our commitment to sustainable practices in education. Prepare your school for a sustainable future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Membership Tiers</span>
+                <h2>Choose Your Membership</h2>
+                <p>Select the membership tier that best fits your career stage and professional goals.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Retired / Career-Break -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                        </div>
+                        <h3 class="pricing-title">Retired / Career-Break</h3>
+                        <p class="pricing-subtitle">For principals on career break</p>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">£</span>
+                            <span class="pricing-amount">95</span>
+                        </div>
+                        <p class="pricing-period">per year</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Access to member resources
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Community networking
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Newsletter & updates
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Event discounts
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#apply" class="btn btn-outline btn-full">Join Now</a>
+                    </div>
+                </div>
+
+                <!-- Aspiring -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <h3 class="pricing-title">Aspiring Principals</h3>
+                        <p class="pricing-subtitle">For those pursuing leadership</p>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">£</span>
+                            <span class="pricing-amount">195</span>
+                        </div>
+                        <p class="pricing-period">per year</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Full resource library access
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Mentoring opportunities
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Professional development
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Course discounts
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Event access
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#apply" class="btn btn-outline btn-full">Join Now</a>
+                    </div>
+                </div>
+
+                <!-- Serving Principals - Featured -->
+                <div class="pricing-card featured">
+                    <span class="pricing-badge">Most Popular</span>
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        </div>
+                        <h3 class="pricing-title">Society of International School Principals</h3>
+                        <p class="pricing-subtitle">For serving principals</p>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">£</span>
+                            <span class="pricing-amount">295</span>
+                        </div>
+                        <p class="pricing-period">per year</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Complete resource library
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Leadership coaching & mentoring
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Priority event registration
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Exclusive member pricing
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Leadership framework input
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Global networking events
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#apply" class="btn btn-secondary btn-full">Join Now</a>
+                    </div>
+                </div>
+
+                <!-- Affiliate -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <h3 class="pricing-title">Affiliate Membership</h3>
+                        <p class="pricing-subtitle">For organisations & partners</p>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">£</span>
+                            <span class="pricing-amount">495</span>
+                        </div>
+                        <p class="pricing-period">per year</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Partner recognition
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Event sponsorship opportunities
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Access to member network
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Collaborative projects
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Brand visibility
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#apply" class="btn btn-outline btn-full">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expression of Interest Form -->
+    <section class="form-section" id="apply" style="display: none;">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Express Your Interest</h2>
+                    <p>Fill out the form below and our team will get in touch with you.</p>
+                </div>
+                <div class="form-card">
+                    <form id="membershipForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="firstName">First Name *</label>
+                                <input type="text" id="firstName" class="form-input" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" class="form-input" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="school">School Name</label>
+                                <input type="text" id="school" class="form-input" placeholder="Enter your school name">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="role">Current Role *</label>
+                                <select id="role" class="form-select" required>
+                                    <option value="">Select your role</option>
+                                    <option value="principal">Serving Principal</option>
+                                    <option value="aspiring">Aspiring Principal</option>
+                                    <option value="retired">Retired Principal</option>
+                                    <option value="career-break">Career Break</option>
+                                    <option value="organization">Organisation / Affiliate</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="membership">Membership Tier Interest *</label>
+                            <select id="membership" class="form-select" required>
+                                <option value="">Select membership tier</option>
+                                <option value="serving">Society of International School Principals - £295/year</option>
+                                <option value="aspiring">Aspiring International School Principals - £195/year</option>
+                                <option value="retired">Retired / Career-Break - £95/year</option>
+                                <option value="affiliate">Affiliate Membership - £495/year</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="country">Country *</label>
+                            <input type="text" id="country" class="form-input" placeholder="Enter your country" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Tell us about yourself</label>
+                            <textarea id="message" class="form-textarea" placeholder="Share your background, goals, or any questions you have about LYIS membership..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" required>
+                                <span>I agree to the <a href="#">Privacy Policy</a> and consent to receiving communications from LYIS.</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            Submit Expression of Interest
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>LYIS</h3>
+                    <p>Leading Your International School. We are committed to levelling up international school leadership through professional development, networking, and collaborative learning opportunities.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="index.html#events">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="lyis-q.html">LYIS-Q</a></li>
+                        <li><a href="lyis-l.html">LYIS-L</a></li>
+                        <li><a href="courses.html">All Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-subscribe">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest updates on courses, events, and leadership resources.</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LYIS. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ===== Navbar Scroll Effect =====
+        let lastScrollY = window.scrollY;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function() {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 100) {
+            navbar.style.background = 'rgba(10, 10, 15, 0.95)';
+            } else {
+            navbar.style.background = 'rgba(10, 10, 15, 0.8)';
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // ===== Mobile Navigation Menu =====
+        const menuToggle = document.getElementById('menuToggle');
+        const menuClose = document.getElementById('menuClose');
+        const navOverlay = document.getElementById('navOverlay');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        menuToggle.addEventListener('click', () => {
+        navOverlay.classList.add('is-open');
+        document.body.classList.add('menu-open');
+        });
+
+        menuClose.addEventListener('click', closeMenu);
+
+        navOverlay.addEventListener('click', (e) => {
+        if (e.target.classList.contains('nav-backdrop')) {
+            closeMenu();
+        }
+        });
+
+        function closeMenu() {
+        navOverlay.classList.remove('is-open');
+        document.body.classList.remove('menu-open');
+        }
+
+        navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const submenu = link.nextElementSibling;
+            if (submenu && submenu.classList.contains('submenu')) {
+            submenu.classList.toggle('is-open');
+            link.setAttribute(
+                'aria-expanded',
+                submenu.classList.contains('is-open')
+            );
+            }
+        });
+        });
+
+        document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+        });
+
+
+        // Form Submit Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            // Get form values
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                school: document.getElementById('school').value,
+                role: document.getElementById('role').value,
+                membership: document.getElementById('membership').value,
+                country: document.getElementById('country').value,
+                message: document.getElementById('message').value
+            };
+            
+            console.log('Form submitted:', formData);
+            
+            // Show success message
+            alert('Thank you for your interest in LYIS membership! Our team will be in touch with you shortly.');
+            
+            // Reset form
+            document.getElementById('membershipForm').reset();
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
